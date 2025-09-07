@@ -3,24 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Namuganga Agnes - Professional Herbalist, Founder of St Anthony Herbal Centre, Uganda">
+<meta name="description" content="Namuganga Agnes - Verified Professional Herbalist, Founder of St Anthony Herbal Centre, Uganda">
 <meta name="keywords" content="Namuganga Agnes, Herbalist, St Anthony Herbal Centre, Uganda, Herbal Medicine, Natural Remedies">
 <meta name="author" content="Namuganga Agnes">
-<title>Namuganga Agnes | St Anthony Herbal Centre</title>
+<title>Namuganga Agnes | Verified Herbalist</title>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- CSS -->
 <style>
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; scroll-behavior: smooth; }
 body { background: linear-gradient(135deg,#f0fff4,#e0f7fa); color:#1b1b1b; line-height:1.6; }
 a { text-decoration:none; color:inherit; }
 
-header { background:#0f3d2e; color:#fff; padding:60px 20px; text-align:center; position:relative; overflow:hidden; }
-header h1 { font-size:3rem; margin-bottom:10px; animation:fadeDown 1s ease forwards; }
-header h2 { font-weight:400; font-size:1.4rem; animation:fadeUp 1s ease forwards; }
+/* Header */
+header { background:#0f3d2e; color:#fff; padding:50px 20px; text-align:center; display:flex; flex-direction:column; align-items:center; position:relative; }
+header img { width:120px; height:120px; border-radius:50%; border:4px solid #fff; object-fit:cover; margin-bottom:20px; }
+header h1 { font-size:2.8rem; display:flex; align-items:center; gap:10px; animation:fadeDown 1s ease forwards; }
+header h2 { font-weight:400; font-size:1.2rem; margin-top:5px; animation:fadeUp 1s ease forwards; }
+.verification { width:25px; height:25px; display:inline-block; background:#1da1f2; border-radius:50%; color:#fff; font-size:16px; font-weight:bold; text-align:center; line-height:25px; }
 
+/* Animations */
 @keyframes fadeDown { 0% {opacity:0; transform:translateY(-50px);} 100% {opacity:1; transform:translateY(0);} }
 @keyframes fadeUp { 0% {opacity:0; transform:translateY(50px);} 100% {opacity:1; transform:translateY(0);} }
 @keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
@@ -60,13 +63,12 @@ section { margin-bottom:60px; animation:fadeIn 2s ease forwards; }
 /* Footer */
 footer { background:#0f3d2e; color:#fff; text-align:center; padding:30px 20px; font-size:0.9rem; }
 
-/* Smooth Scroll & Fade-in */
+/* Scroll Animations */
 [data-animate] { opacity:0; transform:translateY(30px); transition: all 1s ease; }
 [data-animate].active { opacity:1; transform:translateY(0); }
 
 </style>
 
-<!-- JavaScript for animations on scroll -->
 <script>
 document.addEventListener("DOMContentLoaded", function(){
   const elements = document.querySelectorAll('[data-animate]');
@@ -86,7 +88,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <!-- Header -->
 <header>
-  <h1>Namuganga Agnes</h1>
+  <img src="me1.jpg" alt="Namuganga Agnes">
+  <h1>Namuganga Agnes <span class="verification">✔</span></h1>
   <h2>Professional Herbalist & Founder of St Anthony Herbal Centre</h2>
 </header>
 
@@ -97,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function(){
     <img src="me1.jpg" alt="Namuganga Agnes">
     <div class="profile-text">
       <h3>About Me</h3>
-      <p>I am <strong>Namuganga Agnes</strong>, a professional herbalist and founder of <strong>St Anthony Herbal Centre</strong> based in Entebbe, Uganda. Born in 1982, I have dedicated my life to offering authentic herbal remedies and holistic wellness solutions to my community.</p>
-      <p>As a proud mother of five children and wife to Mr. Mulinde Richard, I balance family life while passionately running my herbal practice, empowering individuals to embrace natural healing.</p>
-      <p>Through St Anthony Herbal Centre, I provide consultations, custom herbal blends, detox programs, and wellness workshops designed to promote healthy living in harmony with nature.</p>
+      <p>I am <strong>Namuganga Agnes</strong>, a professional herbalist and founder of <strong>St Anthony Herbal Centre</strong> based in Entebbe, Uganda. Born in 1982, I have dedicated my life to providing authentic herbal remedies and holistic wellness solutions.</p>
+      <p>Proud mother of five children and wife to Mr. Mulinde Richard, I balance family life with my professional work, empowering individuals and communities to embrace natural healing.</p>
+      <p>Through St Anthony Herbal Centre, I offer consultations, custom herbal blends, detox programs, and wellness workshops to promote a healthy lifestyle aligned with nature.</p>
     </div>
   </section>
 
@@ -107,18 +110,18 @@ document.addEventListener("DOMContentLoaded", function(){
   <section class="highlights" data-animate>
     <div class="highlight">
       <h4>Founder & Leader</h4>
-      <p>Established St Anthony Herbal Centre to provide community-driven herbal solutions.</p>
+      <p>Established St Anthony Herbal Centre to provide holistic herbal solutions.</p>
     </div>
     <div class="highlight">
       <h4>Herbal Expertise</h4>
-      <p>Over a decade of experience in creating natural remedies and wellness programs.</p>
+      <p>Over a decade of experience in natural remedies and wellness programs.</p>
     </div>
     <div class="highlight">
       <h4>Family Life</h4>
-      <p>Proud mother of five, living in Entebbe with my husband, nurturing both family and practice.</p>
+      <p>Proud mother of five, living in Entebbe with my husband while nurturing my practice.</p>
     </div>
     <div class="highlight">
-      <h4>Community Empowerment</h4>
+      <h4>Community Engagement</h4>
       <p>Conducts workshops and awareness programs to educate about herbal health and natural living.</p>
     </div>
   </section>
@@ -147,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <!-- Footer -->
 <footer>
-  &copy; 2025 Namuganga Agnes | <a href="https://stanthonyherbalcentre.online">stanthonyherbalcentre.online</a>
+  &copy; 2025 Namuganga Agnes. All Rights Reserved | <a href="https://stanthonyherbalcentre.online">stanthonyherbalcentre.online</a>
 </footer>
 
 </body>
