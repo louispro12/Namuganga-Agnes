@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Namuganga Agnes - Professional Herbalist, Founder of St Anthony Herbal Centre, Uganda">
+<meta name="keywords" content="Namuganga Agnes, Herbalist, St Anthony Herbal Centre, Uganda, Herbal Medicine, Natural Remedies">
+<meta name="author" content="Namuganga Agnes">
+<title>Namuganga Agnes | St Anthony Herbal Centre</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; scroll-behavior: smooth; }
+body { background: linear-gradient(135deg,#f0fff4,#e0f7fa); color:#1b1b1b; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
+
+header { background:#0f3d2e; color:#fff; padding:60px 20px; text-align:center; position:relative; overflow:hidden; }
+header h1 { font-size:3rem; margin-bottom:10px; animation:fadeDown 1s ease forwards; }
+header h2 { font-weight:400; font-size:1.4rem; animation:fadeUp 1s ease forwards; }
+
+@keyframes fadeDown { 0% {opacity:0; transform:translateY(-50px);} 100% {opacity:1; transform:translateY(0);} }
+@keyframes fadeUp { 0% {opacity:0; transform:translateY(50px);} 100% {opacity:1; transform:translateY(0);} }
+@keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
+
+.container { max-width:1200px; margin:50px auto; padding:0 20px; }
+
+/* Sections */
+section { margin-bottom:60px; animation:fadeIn 2s ease forwards; }
+
+/* Profile */
+.profile { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:40px; }
+.profile img { width:300px; border-radius:25px; box-shadow:0 8px 25px rgba(0,0,0,0.2); transition:transform 0.5s ease; }
+.profile img:hover { transform:scale(1.05); }
+.profile-text { flex:1; min-width:300px; }
+.profile-text h3 { font-size:2rem; color:#0f3d2e; margin-bottom:15px; }
+.profile-text p { margin-bottom:15px; font-size:1rem; color:#333; line-height:1.8; }
+
+/* Highlights */
+.highlights { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.highlight { background:#ffffff; padding:30px 25px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.1); flex:1; min-width:250px; text-align:center; transition: transform 0.3s ease; }
+.highlight:hover { transform:translateY(-10px); }
+.highlight h4 { font-size:1.3rem; margin-bottom:10px; color:#0f3d2e; }
+.highlight p { font-size:1rem; color:#555; }
+
+/* Section titles */
+.section-title { text-align:center; margin-bottom:40px; font-size:2rem; color:#0f3d2e; }
+
+/* Gallery */
+.gallery { display:flex; flex-wrap:wrap; gap:25px; justify-content:center; }
+.gallery img { width:300px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.2); transition: transform 0.5s ease; }
+.gallery img:hover { transform:scale(1.05); }
+
+/* Buttons */
+.btn { display:inline-block; padding:12px 25px; background:#0f3d2e; color:#fff; border-radius:15px; font-weight:600; transition:all 0.3s ease; }
+.btn:hover { background:#2f662f; transform:scale(1.05); }
+
+/* Footer */
+footer { background:#0f3d2e; color:#fff; text-align:center; padding:30px 20px; font-size:0.9rem; }
+
+/* Smooth Scroll & Fade-in */
+[data-animate] { opacity:0; transform:translateY(30px); transition: all 1s ease; }
+[data-animate].active { opacity:1; transform:translateY(0); }
+
+</style>
+
+<!-- JavaScript for animations on scroll -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const elements = document.querySelectorAll('[data-animate]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('active');
+      }
+    });
+  }, {threshold:0.3});
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Namuganga Agnes</h1>
+  <h2>Professional Herbalist & Founder of St Anthony Herbal Centre</h2>
+</header>
+
+<div class="container">
+
+  <!-- Profile Section -->
+  <section class="profile" data-animate>
+    <img src="me1.jpg" alt="Namuganga Agnes">
+    <div class="profile-text">
+      <h3>About Me</h3>
+      <p>I am <strong>Namuganga Agnes</strong>, a professional herbalist and founder of <strong>St Anthony Herbal Centre</strong> based in Entebbe, Uganda. Born in 1982, I have dedicated my life to offering authentic herbal remedies and holistic wellness solutions to my community.</p>
+      <p>As a proud mother of five children and wife to Mr. Mulinde Richard, I balance family life while passionately running my herbal practice, empowering individuals to embrace natural healing.</p>
+      <p>Through St Anthony Herbal Centre, I provide consultations, custom herbal blends, detox programs, and wellness workshops designed to promote healthy living in harmony with nature.</p>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights" data-animate>
+    <div class="highlight">
+      <h4>Founder & Leader</h4>
+      <p>Established St Anthony Herbal Centre to provide community-driven herbal solutions.</p>
+    </div>
+    <div class="highlight">
+      <h4>Herbal Expertise</h4>
+      <p>Over a decade of experience in creating natural remedies and wellness programs.</p>
+    </div>
+    <div class="highlight">
+      <h4>Family Life</h4>
+      <p>Proud mother of five, living in Entebbe with my husband, nurturing both family and practice.</p>
+    </div>
+    <div class="highlight">
+      <h4>Community Empowerment</h4>
+      <p>Conducts workshops and awareness programs to educate about herbal health and natural living.</p>
+    </div>
+  </section>
+
+  <!-- Vision & Mission Section -->
+  <section data-animate>
+    <h3 class="section-title">Vision & Mission</h3>
+    <p style="text-align:center; max-width:900px; margin:auto;">Our vision at St Anthony Herbal Centre is to make natural wellness accessible to all and promote sustainable herbal practices. Our mission is to empower individuals to live healthier lives through authentic herbal remedies, detox programs, and wellness education.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section data-animate>
+    <h3 class="section-title">Gallery</h3>
+    <div class="gallery">
+      <img src="new.jpg" alt="Namuganga Agnes at work">
+      <img src="me1.jpg" alt="Namuganga Agnes profile">
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section style="text-align:center; margin-top:50px;" data-animate>
+    <a href="https://stanthonyherbalcentre.online" class="btn">Visit St Anthony Herbal Centre</a>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Namuganga Agnes | <a href="https://stanthonyherbalcentre.online">stanthonyherbalcentre.online</a>
+</footer>
+
+</body>
+</html>
