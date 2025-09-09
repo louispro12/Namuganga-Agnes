@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Namuganga Agnes - Verified Professional Herbalist, Founder of St Anthony Herbal Centre, Uganda">
-<meta name="keywords" content="Namuganga Agnes, Herbalist, St Anthony Herbal Centre, Uganda, Herbal Medicine, Natural Remedies">
+<meta name="description" content="Namuganga Agnes - Verified Professional Herbalist, Founder of St Anthony Herbal Centre, Uganda. Explore her family including Mulinde Louis and Nawoova Getrude.">
+<meta name="keywords" content="Namuganga Agnes, Herbalist, St Anthony Herbal Centre, Uganda, Herbal Medicine, Natural Remedies, Mulinde Louis, Nawoova Getrude, Education, Family">
 <meta name="author" content="Namuganga Agnes">
+
 <title>Namuganga Agnes | Verified Herbalist</title>
 
 <!-- Google Fonts -->
@@ -44,14 +45,15 @@ section { margin-bottom:60px; opacity:0; transform:translateY(30px); transition:
 /* Section titles */
 .section-title { text-align:center; margin-bottom:40px; font-size:2rem; color:#0f3d2e; }
 
-/* Gallery */
-.gallery { display:flex; flex-wrap:wrap; gap:25px; justify-content:center; }
-.gallery img { width:300px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.2); transition: transform 0.5s ease; }
-.gallery img:hover { transform:scale(1.05); }
-
-/* Buttons */
-.btn { display:inline-block; padding:12px 25px; background:#0f3d2e; color:#fff; border-radius:15px; font-weight:600; transition:all 0.3s ease; }
-.btn:hover { background:#2f662f; transform:scale(1.05); }
+/* Children Section */
+.children { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; margin-top:40px; }
+.child-card { background:#fff; padding:25px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.1); width:250px; text-align:center; transition: transform 0.3s ease; }
+.child-card:hover { transform:translateY(-10px); }
+.child-card img { width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:15px; }
+.child-card h3 { color:#0f3d2e; margin-bottom:10px; }
+.child-card p { font-size:1rem; color:#555; margin-bottom:10px; }
+.child-card .btn { display:inline-block; padding:10px 20px; background:#0f3d2e; color:#fff; border-radius:12px; font-weight:600; transition:all 0.3s ease; }
+.child-card .btn:hover { background:#2f662f; transform:scale(1.05); }
 
 /* Footer */
 footer { background:#0f3d2e; color:#fff; text-align:center; padding:25px 20px; font-size:0.9rem; }
@@ -78,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <!-- Header -->
 <header>
-  <img src="me1.jpg" alt="Namuganga Agnes">
+  <img src="Agnes.png" alt="Namuganga Agnes">
   <h1>Namuganga Agnes <span class="verification">✔</span></h1>
   <h2>Professional Herbalist & Founder of St Anthony Herbal Centre</h2>
 </header>
@@ -87,11 +89,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
   <!-- Profile Section -->
   <section class="profile">
-    <img src="me1.jpg" alt="Namuganga Agnes">
+    <img src="Agnes.png" alt="Namuganga Agnes">
     <div class="profile-text">
       <h3>About Me</h3>
-      <p>I am <strong>Namuganga Agnes</strong>, a professional herbalist and founder of <strong>St Anthony Herbal Centre</strong> based in Entebbe, Uganda. Born in 1982, I have dedicated my life to providing authentic herbal remedies and holistic wellness solutions.</p>
-      <p>Proud mother of five children and wife to Mr. Mulinde Richard, I balance family life with my professional work, empowering individuals and communities to embrace natural healing.</p>
+      <p>I am <strong>Namuganga Agnes</strong>, a professional herbalist and founder of <strong>St Anthony Herbal Centre</strong> based in Entebbe, Uganda. I am the proud mother of two children, Mulinde Louis and Nawoova Getrude, and wife to <strong>Mr. Mulinde Richard</strong>. I dedicate my life to providing authentic herbal remedies and holistic wellness solutions.</p>
       <p>Through St Anthony Herbal Centre, I offer consultations, custom herbal blends, detox programs, and wellness workshops to promote a healthy lifestyle aligned with nature.</p>
     </div>
   </section>
@@ -107,49 +108,34 @@ document.addEventListener("DOMContentLoaded", function(){
       <p>Over a decade of experience in natural remedies and wellness programs.</p>
     </div>
     <div class="highlight">
-      <h4>Family Life</h4>
-      <p>Proud mother of five, living in Entebbe with my husband while nurturing my practice.</p>
-    </div>
-    <div class="highlight">
       <h4>Community Engagement</h4>
       <p>Conducts workshops and awareness programs to educate about herbal health and natural living.</p>
     </div>
   </section>
 
-  <!-- Vision & Mission Section -->
-  <section>
-    <h3 class="section-title">Vision & Mission</h3>
-    <p style="text-align:center; max-width:900px; margin:auto;">Our vision at St Anthony Herbal Centre is to make natural wellness accessible to all and promote sustainable herbal practices. Our mission is to empower individuals to live healthier lives through authentic herbal remedies, detox programs, and wellness education.</p>
-  </section>
-
-  <!-- Gallery Section -->
-  <section>
-    <h3 class="section-title">Gallery</h3>
-    <div class="gallery">
-      <img src="new.jpg" alt="Namuganga Agnes at work">
-      <img src="me1.jpg" alt="Namuganga Agnes profile">
+  <!-- Children Section -->
+  <section class="children">
+    <div class="child-card">
+      <img src="mulinde.jpg" alt="Mulinde Louis">
+      <h3>Mulinde Louis</h3>
+      <p>Student at Kisubi Mapeera Secondary School. Passionate about football, basketball, and boxing.</p>
+      <a href="mulinde.html" class="btn">View Full Profile</a>
     </div>
-  </section>
 
-  <!-- Daughter Section -->
-  <section style="text-align:center; margin-top:50px;">
-    <h3 class="section-title">My Daughter</h3>
-    <a href="nawoova.html">
-      <img src="Nawoova.png" alt="Nawoova Gatrude" style="width:200px; border-radius:20px; box-shadow:0 5px 15px rgba(0,0,0,0.2); margin-bottom:15px;">
-    </a>
-    <p>Click the image to view <strong>Nawoova Gatrude</strong>'s profile, my beloved daughter.</p>
-  </section>
-
-  <!-- Call to Action -->
-  <section style="text-align:center; margin-top:50px;">
-    <a href="https://stanthonyherbalcentre.online" class="btn">Visit St Anthony Herbal Centre</a>
+    <div class="child-card">
+      <img src="nawoova.jpg" alt="Nawoova Getrude">
+      <h3>Nawoova Getrude</h3>
+      <p>Primary 7 student at St. Savio Junior School, Kisubi. Enjoys football, basketball, dancing, and comedy skits.</p>
+      <a href="nawoova.html" class="btn">View Full Profile</a>
+    </div>
   </section>
 
 </div>
 
 <!-- Footer -->
 <footer>
-  &copy; 2025 Namuganga Agnes. All Rights Reserved | <a href="https://stanthonyherbalcentre.online">stanthonyherbalcentre.online</a>
+  &copy; 2025 Namuganga Agnes. All Rights Reserved | <a href="https://stanthonyherbalcentre.online" style="color:#fff; text-decoration:underline;">stanthonyherbalcentre.online</a>
 </footer>
+
 </body>
 </html>
