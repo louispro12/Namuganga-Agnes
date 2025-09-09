@@ -1,150 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawoova Gatrude - Student Profile</title>
-    <meta name="description" content="Nawoova Gatrude, a Primary 7 student at St. Saviour Junior School, Kisui. Interests include sports, comedy skits, dancing, and TikTok.">
-    <meta name="keywords" content="Nawoova Gatrude, Primary 7, St. Saviour Junior School, Kisui, student, sports, dancing, TikTok, comedy, profile">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nawoova Gatrude | Student Profile</title>
+<meta name="description" content="Nawoova Gatrude, Primary 7 student at St. Saviour Junior School, Kisubi. Loves sports, comedy skits, dancing, and TikTok. Daughter of Namuganga Agnes and Mulinde Richard.">
+<meta name="keywords" content="Nawoova Gatrude, Primary 7, St. Saviour Junior School Kisubi, Uganda, student, daughter of Namuganga Agnes, sports, dancing, TikTok, comedy">
+<meta name="author" content="Nawoova Gatrude">
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Nawoova Gatrude - Student Profile">
-    <meta property="og:description" content="Meet Nawoova Gatrude, a Primary 7 student at St. Saviour Junior School, Kisui. Loves sports, dancing, TikTok, and comedy.">
-    <meta property="og:image" content="Nawoova.png">
-    <meta property="og:url" content="https://louisproug.online/nawoova.html">
-    <meta property="og:type" content="profile">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nawoova Gatrude - Student Profile">
-    <meta name="twitter:description" content="Meet Nawoova Gatrude, a Primary 7 student at St. Saviour Junior School, Kisui. Loves sports, dancing, TikTok, and comedy.">
-    <meta name="twitter:image" content="Nawoova.png">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; scroll-behavior:smooth; }
+body { background: linear-gradient(135deg,#fff8f0,#e0f7fa); color:#333; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
 
-    <!-- Structured Data for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nawoova Gatrude",
-      "birthDate": "2011",
-      "gender": "Female",
-      "parent": [
-        {"@type": "Person", "name": "Ms. Namuganga Agnes", "role": "Mother"},
-        {"@type": "Person", "name": "Mulinde Richard", "role": "Father"}
-      ],
-      "sibling": [
-        {"@type": "Person", "name": "Brother 1"},
-        {"@type": "Person", "name": "Brother 2"},
-        {"@type": "Person", "name": "Sister 1"},
-        {"@type": "Person", "name": "Sister 2"}
-      ],
-      "image": "Nawoova.png",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://louisproug.online/nawoova.html"
-      },
-      "url": "https://louisproug.online/nawoova.html"
-    }
-    </script>
+/* Header */
+header { background:#4CAF50; color:#fff; padding:50px 20px; text-align:center; display:flex; flex-direction:column; align-items:center; position:relative; }
+header img { width:150px; height:150px; border-radius:50%; border:4px solid #fff; object-fit:cover; margin-bottom:20px; transition: transform 0.5s ease; }
+header img:hover { transform:scale(1.05); }
+header h1 { font-size:2.8rem; margin-bottom:5px; }
+header p { font-size:1.2rem; }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid white;
-            object-fit: cover;
-        }
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #4CAF50;
-        }
-        ul {
-            list-style-type: square;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #e9ecef;
-            font-size: 0.9em;
-            color: #555;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+/* Sections */
+section { max-width:900px; margin:40px auto; padding:0 20px; opacity:0; transform:translateY(30px); transition: all 1s ease; }
+h2 { color:#4CAF50; margin-bottom:15px; text-align:center; }
+ul { list-style-type: square; padding-left:20px; }
+li { margin-bottom:8px; }
+
+/* Cards / Highlights */
+.card { background:#fff; padding:25px 20px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.1); margin:15px 0; transition: transform 0.3s ease; }
+.card:hover { transform:translateY(-10px); }
+
+/* Buttons */
+.btn { display:inline-block; padding:12px 25px; background:#4CAF50; color:#fff; border-radius:15px; font-weight:600; transition:all 0.3s ease; margin-top:15px; }
+.btn:hover { background:#2f662f; transform:scale(1.05); }
+
+/* Footer */
+footer { background:#4CAF50; color:#fff; text-align:center; padding:25px 20px; font-size:0.9rem; margin-top:50px; }
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, {threshold:0.3});
+  sections.forEach(sec => observer.observe(sec));
+});
+</script>
+
 </head>
 <body>
-    <header>
-        <img src="Nawoova.png" alt="Nawoova Gatrude">
-        <h1>Nawoova Gatrude</h1>
-        <p>Primary 7 Student at St. Saviour Junior School, Kisui</p>
-    </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! My name is <strong>Nawoova Gatrude</strong>. I was born in 2011, and I am currently a Primary 7 student at <strong>St. Saviour Junior School, Kisui</strong>. I love learning, sports, dancing, and making people smile through comedy skits. I also enjoy scrolling TikTok for fun and inspiration.</p>
-        </section>
+<!-- Header -->
+<header>
+  <img src="Nawoova.png" alt="Nawoova Gatrude">
+  <h1>Nawoova Gatrude</h1>
+  <p>Primary 7 Student at St. Saviour Junior School, Kisubi</p>
+</header>
 
-        <section>
-            <h2>Family</h2>
-            <p>My parents are:</p>
-            <ul>
-                <li><strong>Mother:</strong> Ms. Namuganga Agnes</li>
-                <li><strong>Father:</strong> Mulinde Richard</li>
-            </ul>
-            <p>I have four siblings:</p>
-            <ul>
-                <li>Brother 1</li>
-                <li>Brother 2</li>
-                <li>Sister 1</li>
-                <li>Sister 2</li>
-            </ul>
-        </section>
+<!-- About Section -->
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Hello! My name is <strong>Nawoova Gatrude</strong>. I was born in 2011, and I am a Primary 7 student at <strong>St. Saviour Junior School, Kisubi</strong>. I love learning, playing sports, dancing, making comedy skits, and scrolling TikTok for fun and inspiration.</p>
+  </div>
+</section>
 
-        <section>
-            <h2>Hobbies & Interests</h2>
-            <ul>
-                <li>Playing sports</li>
-                <li>Dancing</li>
-                <li>Comedy skits</li>
-                <li>Scrolling TikTok</li>
-            </ul>
-        </section>
+<!-- Family Section -->
+<section>
+  <h2>Family</h2>
+  <div class="card">
+    <p>My parents are:</p>
+    <ul>
+      <li><strong>Mother:</strong> Namuganga Agnes</li>
+      <li><strong>Father:</strong> Mulinde Richard</li>
+    </ul>
+    <p>My siblings are:</p>
+    <ul>
+      <li>Brother: Kyagulanyi Pius</li>
+      <li>Brother: Mulinde Louis</li>
+      <li>Sister: Namulinde Maria</li>
+      <li>Sister: Namubiru Patricia</li>
+    </ul>
+  </div>
+</section>
 
-        <section>
-            <h2>Contact & Social</h2>
-            <p>You can find me on social media and TikTok by searching for <strong>Nawoova Gatrude</strong>.</p>
-        </section>
-    </main>
+<!-- Hobbies Section -->
+<section>
+  <h2>Hobbies & Interests</h2>
+  <div class="card">
+    <ul>
+      <li>Playing sports</li>
+      <li>Dancing</li>
+      <li>Comedy skits</li>
+      <li>Scrolling TikTok</li>
+    </ul>
+  </div>
+</section>
 
-    <footer>
-        &copy; 2025 Nawoova Gatrude | Hosted on <a href="https://louisproug.online" target="_blank">louisproug.online</a>. All rights reserved.
-    </footer>
+<!-- Link to Mother -->
+<section>
+  <h2>Family Connection</h2>
+  <div class="card" style="text-align:center;">
+    <p>I am proud to be the daughter of <strong>Namuganga Agnes</strong>, a verified herbalist and founder of St Anthony Herbal Centre. Click below to visit her profile:</p>
+    <a href="namuganga.html" class="btn">Visit My Mother’s Profile</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Nawoova Gatrude | Linked with <a href="namuganga.html" style="color:#fff; text-decoration:underline;">Namuganga Agnes</a>. All rights reserved.
+</footer>
+
 </body>
 </html>
